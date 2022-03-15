@@ -9,7 +9,7 @@ RUN pip install SQLAlchemy==1.3.23
 
 RUN mkdir /project
 
-COPY script/ /project/scripts/
+COPY ./script/ /project/scripts/
 COPY config/airflow.cfg ${AIRFLOW_HOME}/airflow.cfg
 
 RUN chmod +x /project/scripts/init.sh
